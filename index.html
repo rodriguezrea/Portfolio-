@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia L. Jayan | ITE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Mia<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Activities</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="themeBtn" class="theme-btn"
+                onclick="toggleTheme()">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="subtitle">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Mia L. Jayan</span></h1>
+            <h2>BS Information Technology Student</h2>
+
+            <p>
+                Welcome to my personal portfolio! Here you can explore
+                my background, skills, and HTML activities for ITE 1.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Activities</a>
+                
+
+
+
+<script>
+document.getElementById("themeBtn").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️";
+    } else {
+        this.textContent = "🌙";
+    }
+});
+</script>
+
+<button type="button" class="btn secondary" id="helloBtn">
+    Say Hello
+</button>
+
+<script>
+document.getElementById("helloBtn").addEventListener("click", function () {
+    alert("Hello, Mia! 💗 Welcome to my ITE 1 Portfolio!");
+});
+</script>
+
+</script>
+            </div>
+
+            <p id="dateTime" class="date-time"></p>
+        </div>
+
+        <div class="profile-container">
+            <!-- Put your profile picture in the images folder -->
+            <img src="pfp.jpeg"
+                 alt="Mia L. Jayan Profile Picture"
+                 class="profile-img"
+                 onerror="this.style.display='none';
+                 document.getElementById('profilePlaceholder')
+                 .style.display='flex';">
+
+            <div id="profilePlaceholder" class="profile-placeholder">
+                MIA
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section">
+        <p class="subtitle">GET TO KNOW ME</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about-card">
+            <h3>Hello! I'm Mia.</h3>
+            <p>
+                I am an Information Technology student who is interested
+                in learning about computers, technology, and web development.
+                This portfolio is part of my ITE 1 project, where I showcase
+                my activities and the skills I have learned.
+            </p>
+
+            <div id="moreInfo" class="more-info" style="display:none;">
+                <p>
+                    I believe that every activity is an opportunity to learn
+                    something new. My goal is to improve my programming,
+                    creativity, and problem-solving skills as I continue
+                    my journey in Information Technology.
+                </p>
+            </div>
+
+            <button type="button"
+        class="btn"
+        id="readMoreBtn"
+        onclick="toggleInfo()">
+    Read More
+</button>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <span>🎓</span>
+                <h3>Education</h3>
+                <p>BS Information Technology</p>
+            </div>
+
+            <div class="info-card">
+                <span>💗</span>
+                <h3>Interests</h3>
+                <p>Technology, web design, and learning new skills</p>
+            </div>
+
+            <div class="info-card">
+                <span>🎯</span>
+                <h3>My Goal</h3>
+                <p>To become a skilled IT professional</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <p class="subtitle">WHAT I CAN DO</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>💻 HTML</h3>
+                <p>Creating and organizing web page structures.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🎨 CSS</h3>
+                <p>Designing layouts, colors, and responsive pages.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>⚡ JavaScript</h3>
+                <p>Adding interactive features to websites.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🤝 Teamwork</h3>
+                <p>Working with others and sharing ideas.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🧠 Problem Solving</h3>
+                <p>Finding solutions and learning from mistakes.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>⏰ Time Management</h3>
+                <p>Organizing tasks and completing activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / HTML ACTIVITIES -->
+<section id="projects" class="section">
+    <p class="subtitle">MY ITE 1 OUTPUTS</p>
+    <h2 class="section-title">HTML <span>Activities</span></h2>
+
+    <p class="section-description">
+        Explore my HTML activities from prelim to final.
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="project-icon">🌸</div>
+            <p>Happy Teacher's Day</p>
+            <a class="btn"
+               href="https://bossemjayyy16-bot.github.io/Happy-Theacher-s-Day/"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Activity ↗
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">💗</div>
+            <p>CSS Transform/Transition</p>
+            <a class="btn"
+               href="https://bossemjayyy16-bot.github.io/css-transform/"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Activity ↗
+            </a>
+        </div>
+
+
+
+            <!-- ADD MORE ACTIVITIES BY COPYING A PROJECT CARD -->
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <p class="subtitle">LET'S CONNECT</p>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact-card">
+            <p>Feel free to contact me through the details below.</p>
+
+            <p>📧 Email:
+                <a href="bossemjayyy16@gmail.com"">
+                    YOUR-EMAIL@gmail.com
+                </a>
+            </p>
+
+            <p>📱 Phone: 09537960072</p>
+
+            <button class="btn" onclick="showContactAlert()">
+               
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Mia L. Jayan | ITE 1 Portfolio Project</p>
+        <p>Made with 💗 and passion for learning</p>
+    </footer>
+
+    <button id="topBtn" onclick="goToTop()" title="Back to Top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
